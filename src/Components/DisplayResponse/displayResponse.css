@@ -1,0 +1,17 @@
+.display-response{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.back-to-home-btn{
+    padding: 10px 10px;
+    background-color: #039c69;
+    color: #dfe0e0;
+    border-radius: 5px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }

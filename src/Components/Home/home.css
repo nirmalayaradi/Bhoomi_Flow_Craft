@@ -1,0 +1,96 @@
+.hero-section{
+    height: 30vh;
+    background-color: #b8eece;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+.hero-section h1{
+    color: #145814;
+}
+.hero-section p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #3fae3f;
+}
+
+.flow-chart-create-sec{
+    height: 45vh;
+    background-color: #e8f3f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flow-chart-create-form{
+    width: 96%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #d6d6d6;
+}
+.flow-chart-create-form h1{
+    font-size: 24px;
+    color: #076f07;
+    margin-bottom: 15px;
+}
+.inputs-section{
+    text-align: right;
+}
+.input-container{
+    height: 70px;
+}
+.input-container label{
+    font-size: 16px;
+    font-weight: 500;
+    color: #236e23;
+    margin-right: 15px;
+}
+.input-container input{
+    width: 240px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #272727;
+    border: 2px solid #d6d6d6;
+    border-radius: 4px;
+    padding: 6px 6px 6px 12px;
+    outline: none;
+}
+.input-container input::placeholder{
+    color: #b7b6b6;
+}
+.create-btn button{
+    font-size: 18px;
+    color: #eae8e8;
+    background-color: #076f07;
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+.create-btn button:hover{
+    cursor: pointer;
+}
+.hide-err-msg{
+    visibility: hidden;
+}
+.error-message{
+    color: #ea0606;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 5px;
+    transform: translateX(43%);
+}
+
+.input-container input.error-input{
+    border: 1px solid #ea0606;
+}

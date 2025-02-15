@@ -1,0 +1,14 @@
+.footer{
+    height: 15vh;
+    background-color: #216021;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    color: #dedcdc;
+}
+.footer ul{
+    display: flex;
+    gap: 20px;
+}
