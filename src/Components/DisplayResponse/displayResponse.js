@@ -6,7 +6,7 @@ const DisplayResponse = () => {
     return(
         <div className='display-response'>
             <div>Flow Chart Ctreated</div>
-            <Link to="/Bhoomi_Flow_Craft/home">
+            <Link to="/Bhoomi_Flow_Craft">
                 <button className='back-to-home-btn'>Back to home</button>
             </Link>
         </div>
