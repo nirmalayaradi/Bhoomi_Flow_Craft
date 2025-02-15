@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Bhoomi_Flow_Craft/static/css/main.57150391.css",
-    "main.js": "/Bhoomi_Flow_Craft/static/js/main.aa4f4b0e.js",
+    "main.js": "/Bhoomi_Flow_Craft/static/js/main.183f9f32.js",
     "index.html": "/Bhoomi_Flow_Craft/index.html",
     "main.57150391.css.map": "/Bhoomi_Flow_Craft/static/css/main.57150391.css.map",
-    "main.aa4f4b0e.js.map": "/Bhoomi_Flow_Craft/static/js/main.aa4f4b0e.js.map"
+    "main.183f9f32.js.map": "/Bhoomi_Flow_Craft/static/js/main.183f9f32.js.map"
   },
   "entrypoints": [
     "static/css/main.57150391.css",
-    "static/js/main.aa4f4b0e.js"
+    "static/js/main.183f9f32.js"
   ]
 }
