@@ -76,7 +76,7 @@ const Home = () => {
         } catch (error) {
             console.error('Error:', error);
             alert('An error occurred. Please try again later.');
-            navigate("/home/flow_chart");
+            navigate("/Bhoomi_Flow_Craft/flow_chart");
         }
     }
 

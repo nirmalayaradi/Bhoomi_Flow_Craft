@@ -9,8 +9,8 @@ import './App.css';
 const App = () => {
   return (
     <Routes>
-      <Route path='/' element={<Layout><Home/></Layout>} />
-      <Route path='/home/flow_chart' element={<Layout><DisplayResponse/></Layout>} />
+      <Route path='/Bhoomi_Flow_Craft/home' element={<Layout><Home/></Layout>} />
+      <Route path='/Bhoomi_Flow_Craft/flow_chart' element={<Layout><DisplayResponse/></Layout>} />
     </Routes>
   );
 }
