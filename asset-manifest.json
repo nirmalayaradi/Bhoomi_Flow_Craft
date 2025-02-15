@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Bhoomi_Flow_Craft/static/css/main.57150391.css",
+    "main.js": "/Bhoomi_Flow_Craft/static/js/main.aa4f4b0e.js",
+    "index.html": "/Bhoomi_Flow_Craft/index.html",
+    "main.57150391.css.map": "/Bhoomi_Flow_Craft/static/css/main.57150391.css.map",
+    "main.aa4f4b0e.js.map": "/Bhoomi_Flow_Craft/static/js/main.aa4f4b0e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57150391.css",
+    "static/js/main.aa4f4b0e.js"
+  ]
+}
