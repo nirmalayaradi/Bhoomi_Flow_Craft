@@ -55,28 +55,34 @@ const Home = () => {
         const requestBody = {
             processComponentId: processId,
             email: email
-        };
+          };
 
-        try {
-            const response = await fetch('https://c02-usa-east.integrate-test.boomi.com/ws/simple/createData;boomi_auth=dHJhaW5pbmduaXJtYWxheWFyYWRpLURQS0o2VS5ERzJSVU86NjYwNTBiODctNmMwYy00OGJlLWExNzMtMDgxMGI2MmJhOTMy', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(requestBody),
+          try {
+            const response = await fetch('https://c02-usa-east-et.integrate-test.boomi.com/ws/rest/data/v1/getData/;boomi_auth=aGF0aG9yaXR5Mi1BNzhIUjQuNzNCNkZROmIxYTJjMTE4LTE5MDMtNGU1OC04MmE1LWRhOTc0NmQ5MGRkYQ==', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(requestBody),
+              //mode: 'no-cors', //Ensure CORS is enabled
             });
-
+            const data = await response.text();
+            localStorage.setItem("documents", data);
+            localStorage.setItem("requestBody", requestBody.processComponentId);
+            console.log(data)
             if (response.ok) {
-                const data = await response.json();
+                
                 alert('Flow chart created successfully!');
+                navigate("/Bhoomi_Flow_Craft/flow_chart");
                 
             } else {
                 alert('Failed to create flow chart. Please try again.');
+                navigate("/Bhoomi_Flow_Craft/flow_chart");
             }
         } catch (error) {
             console.error('Error:', error);
             alert('An error occurred. Please try again later.');
-            navigate("/Bhoomi_Flow_Craft/flow_chart");
+            
         }
     }
 
@@ -85,10 +91,9 @@ const Home = () => {
     return(
         <>
             <div className="hero-section">
-                <h1>Bhoomi Flow Craft</h1>
+                <h1>Boomi Flow Craft</h1>
                 <p>Created by Hathority</p>
             </div>
-
 
             <div className="flow-chart-create-sec">
                 <form className="flow-chart-create-form" onSubmit = {(e) => {onSubmitButton(e, processId, email)}} >
